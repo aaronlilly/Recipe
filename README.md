@@ -1,3 +1,3 @@
 # Recipies
  
-https://aaronlilly.github.io/Recipe/
+https://aaronlilly.github.io/Recipe/Recipe.html
