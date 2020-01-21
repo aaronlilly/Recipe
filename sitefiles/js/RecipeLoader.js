@@ -16,7 +16,7 @@ const obj =
 ;
 //log,id,presentation number..etc
 const obj2 = 
-{"Enhanced":
+{"recipe":
 {"siteinfo":{"$":"also auto populated"},
   "received":
   {"enhancedCallLogsExtendedEntry":
@@ -43,19 +43,12 @@ const obj2 =
 ;
 
 
-//on page load
-$(document).ready(function () {  
-
-    $('#ArrayD').append(obj.fruit[1].fruit +"<br>")
-    $('#ArrayD').append(obj2.Enhanced.siteinfo.$ +"<br>")
-    });
-// end on page load
 
 
 //on click populate
 $(document).ready(function () {  
-$('#autoLoadR').click(function () {
-    $('#buttnLodr').append(obj.fruit[0].fruit)
+$('#pancakes').click(function () {
+    $('#buttnLodr').append(obj2.recipe.siteinfo.$)
       
     });
  });
