@@ -17,7 +17,7 @@ const obj =
 //log,id,presentation number..etc
 const obj2 = 
 {"recipe":
-{"siteinfo":{"$":"also auto populated"},
+{"recipeName":{"$":"Pancakes"},
   "received":
   {"enhancedCallLogsExtendedEntry":
     {"countryCode":{"$":"1"},
@@ -48,8 +48,8 @@ const obj2 =
 //on click populate
 $(document).ready(function () {  
 $('#pancakes').click(function () {
-    $('#buttnLodr').append(obj2.recipe.siteinfo.$)
-      
+    $('#buttnLodr').append(obj2.recipe.recipeName.$)
+      $('#buttnLodr').append(obj2.recipe.recipeName.$.received.enhancedCallLogsExtendedEntry.countryCode.$)
     });
  });
 //end on click populate
