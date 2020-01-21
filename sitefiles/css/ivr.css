@@ -1,0 +1,32 @@
+body { margin-left:5%;
+        width: 95%;
+font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; 
+    background: linear-gradient(to bottom, #64d4ef, #06588e);
+     font-weight: bold;
+}
+.whiteFont {color:white}
+
+#container {height: 100%,width:100%;color:white}
+
+
+#pageTitle {width:100%;padding-top:5%;}
+
+#pageBody {margin-left:5%;width:100%;padding-top:5%;color:white}
+
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: white;
+   text-align: right;
+}
+
+#twoSides {width:100%;}
+#leftSide {width:50%;float:left;}
+#rightSide {width:auto;float:left;}
+
+#pageImage {color:white;}
+
+#TAB {margin-left:30px;}
