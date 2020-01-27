@@ -2,12 +2,12 @@ const obj =
 {"recipe" :
   [
   {
-    "name": "Pancakes",
+    "name": "Fluffy Pancakes",
     "type": "Breakfast",
-    "ingred":" ",
+    "ingred":"3/4 cup milk <br> 2 tablespoon vinegar <br> 1 cup flour <br> 1 teaspoon baking powder <br> 1/2 teaspoon baking soda <br> 1/2 teaspoon salt <br> 1 banana" ,
     "servings":" ",
     "prep": " ",
-    "cook":" "
+    "cook":"add vinegar to milk and set aside, stir dry ingrediants together with banana, then add milk mixture, stir as little as possible as the more you stir the less fluffy the pancakes. then cook on skillet.  "
   },
     {
     "name": "Buffalo Maranade",
@@ -18,28 +18,20 @@ const obj =
     "cook":"Place butter and franks in sauce pan, heat on low until butter has melted, add other incrediants, stir, add to chickent to maranade overnight."
   },
   {
-    "name": " ",
-    "type": " ",
-    "ingred":" ",
+    "name": "Honey Mustard",
+    "type": "condiment",
+    "ingred":"1/2 cup mayo <br> 1/4 cup Mustard <br> 1/4 cup Honey <br> cayenne pepper to taste (otpional)",
     "servings":" ",
-    "prep": " ",
-    "cook":" "
+    "prep": "5 mins",
+    "cook":"Stir all items in bowl, serve"
   },
    {
-    "name": " ",
-    "type": " ",
-    "ingred":" ",
+    "name": "Aaron's Jalapeno Sause",
+    "type": "condiment",
+    "ingred":"20 Fresh Jalapeno Peppers <br> 1 1/2 cups vinegar <br> 1/2 teaspoon salt <br> 3 teaspoon minced fresh Garlic",
     "servings":" ",
-    "prep": " ",
-    "cook":" "
-  },
-   {
-    "name": " ",
-    "type": " ",
-    "ingred":" ",
-    "servings":" ",
-    "prep": " ",
-    "cook":" "
+    "prep": "20 mins",
+    "cook":"Place All in sauce pan, bring to boil, then simmer for 10 minutes or until Peppers are soft, place in blender and blend to puree, keep in closed container and refidgerated until use. "
   }
 
     ]}
@@ -98,6 +90,14 @@ const obj =
 //     "redirectingPresentationIndicator":{"$":"Public"},
 //     "redirectingReason":{"$":"call"}}}}}    
 // ;
+
+
+$(document).ready(function () {  
+    
+    $('#import').append('<button class="btn btn-info" caption="Pancakes" id="pancakes">Pancakes</button>')
+
+    });
+
 
 
 //on click populate
