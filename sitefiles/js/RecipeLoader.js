@@ -35,6 +35,16 @@ const obj =
   }
 
     ]}
+
+const lB = "<br>"
+const S = " "
+const sG ="Servings "
+const nM = "Name "
+const tP = "Type "
+const iG = "Ingrediants "
+const pP = "Prep "
+const cK = "Instructions "
+
 // ;
 // //log,id,presentation number..etc
 // const obj2 = 
@@ -94,7 +104,7 @@ const obj =
 
 $(document).ready(function () {  
     
-    $('#import').append('<button class="btn btn-info" caption="Pancakes" id="pancakes">Pancakes</button>')
+    $('#import').append('<button class="btn btn-info" caption="Pancakes" id="pancakes">Pancakes</button> ' + '<button class="btn btn-info" caption="Buffalo Maranade" id="buffaloMaranade">Buffalo Maranade</button> ' + '<button class="btn btn-info" caption="Pancakes" id="pancakes" >Pancakes</button> ' + '<button class="btn btn-info" caption="Pancakes" id="pancakes">Pancakes</button> ')
 
     });
 
@@ -104,10 +114,17 @@ $(document).ready(function () {
 $(document).ready(function () {  
     // console.log(obj3.recipe.received.enhancedCallLogsExtendedEntry.countryCode.$)
 $('#pancakes').click(function () {
-    $('#buttnLodr').append(obj.recipe[0].name)
+    $('#buttnLodr').append(obj.recipe[0].name + lB + iG + obj.recipe[0].ingred + lB +  sG + obj.recipe[0].servings + lB + pP + obj.recipe[0].cook)
 
     });
  });
 //end on click populate
 
 
+
+$(document).ready(function () {  
+$('#buffaloMaranade').click(function () {
+    
+    $('#buttnLodr').append(obj.recipe[1].name + lB + iG + obj.recipe[1].ingred + lB +  sG + obj.recipe[1].servings + lB + pP + obj.recipe[1].cook)
+    });
+ });
