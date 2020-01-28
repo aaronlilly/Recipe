@@ -26,7 +26,7 @@ const obj =
     "cook":"Stir all items in bowl, serve"
   },
    {
-    "name": "Aaron's Jalapeno Sause",
+    "name": "Aaron's Jalapeno Sauce",
     "type": "condiment",
     "ingred":"20 Fresh Jalapeno Peppers <br> 1 1/2 cups vinegar <br> 1/2 teaspoon salt <br> 3 teaspoon minced fresh Garlic",
     "servings":" ",
@@ -104,7 +104,7 @@ const cK = "Instructions "
 
 $(document).ready(function () {  
     
-    $('#import').append('<button class="btn btn-info" caption="Pancakes" id="pancakes">Pancakes</button> ' + '<button class="btn btn-info" caption="Buffalo Maranade" id="buffaloMaranade">Buffalo Maranade</button> ' + '<button class="btn btn-info" caption="Pancakes" id="pancakes" >Pancakes</button> ' + '<button class="btn btn-info" caption="Pancakes" id="pancakes">Pancakes</button> ')
+    $('#import').append('<button class="btn btn-info" caption="Pancakes" id="pancakes">Pancakes</button> ' + '<button class="btn btn-info" caption="Buffalo Maranade" id="buffaloMaranade">Buffalo Maranade</button> ' + '<button class="btn btn-info" caption="Honey Mustard" id="honeyMustard" >Honey Mustard</button> ' + '<button class="btn btn-info" caption="Jalapeno Sauce" id="jalapenoSauce">Aarons Jalapeno Sauce</button> ')
 
     });
 
@@ -114,6 +114,7 @@ $(document).ready(function () {
 $(document).ready(function () {  
     // console.log(obj3.recipe.received.enhancedCallLogsExtendedEntry.countryCode.$)
 $('#pancakes').click(function () {
+     $('#buttnLodr').html("")
     $('#buttnLodr').append(obj.recipe[0].name + lB + iG + obj.recipe[0].ingred + lB +  sG + obj.recipe[0].servings + lB + pP + obj.recipe[0].cook)
 
     });
@@ -124,7 +125,23 @@ $('#pancakes').click(function () {
 
 $(document).ready(function () {  
 $('#buffaloMaranade').click(function () {
-    
+$('#buttnLodr').html("")
     $('#buttnLodr').append(obj.recipe[1].name + lB + iG + obj.recipe[1].ingred + lB +  sG + obj.recipe[1].servings + lB + pP + obj.recipe[1].cook)
     });
  });
+
+
+$(document).ready(function () {  
+$('#honeyMustard').click(function () {
+$('#buttnLodr').html("")
+    $('#buttnLodr').append(obj.recipe[2].name + lB + iG + obj.recipe[2].ingred + lB +  sG + obj.recipe[2].servings + lB + pP + obj.recipe[2].cook)
+    });
+ });
+
+$(document).ready(function () {  
+$('#jalapenoSauce').click(function () {
+$('#buttnLodr').html("")
+    $('#buttnLodr').append(obj.recipe[3].name + lB + iG + obj.recipe[3].ingred + lB +  sG + obj.recipe[3].servings + lB + pP + obj.recipe[3].cook)
+    });
+ });
+
